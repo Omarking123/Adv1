@@ -41,6 +41,17 @@
             //    int index =  Helper.linearsearch(employees, E03);
             //    Console.WriteLine(index); 
             #endregion
+            #region Video 3
+
+            //Employee E02 = new Employee() { Id = 1, Name = "ahmed", Age = 10, Salary = 3000 };
+            //Employee E01 = new Employee() { Id = 1, Name = "ahmed", Age = 10, Salary = 3000 };
+            ////Employee E02 = new Employee() { Id = 2, Name = "Omar", Age = 30, Salary = 4000 };
+
+            //if (E01.Equals( E02))
+            //    Console.WriteLine("E01 == E02");
+            //else
+            //    Console.WriteLine("E01 != E02"); 
+            #endregion
         }
     }
 }

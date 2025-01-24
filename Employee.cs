@@ -14,6 +14,16 @@ namespace Adv1
         public double Salary { get; set; }
 
 
+       
+        public static bool operator ==(Employee left , Employee right)
+        {
+            return left.Id == right.Id && left.Name == right.Name && left.Age == right.Age && left.Salary == right.Salary;
+        }
+        public static bool operator !=(Employee left, Employee right)
+        {
+            return left.Id != right.Id && left.Name != right.Name && left.Age != right.Age && left.Salary != right.Salary;
+        }
+
         public override string ToString()
         {
             return $"{Id}, {Name}, {Age}, {Salary}";

@@ -52,6 +52,29 @@
             //else
             //    Console.WriteLine("E01 != E02"); 
             #endregion
+            #region video 4
+
+            //int[] Numbers = { 9, 3, 1, 3, 5, 6, 1, 7, -1, 4, 9 };
+
+            //Helper.Print(Numbers);
+
+            //Helper.BubbleSort(Numbers);
+            //Console.WriteLine();
+            //Helper.Print(Numbers);
+
+            //Point[] points =
+            //{
+            //    new Point (6,6),
+            //    new Point (2,2),
+            //    new Point (4,4),
+            //    new Point (3,3),
+            //    new Point (1,1),
+            //    new Point (5,5)
+
+            //};
+            //Helper.BubbleSort(points);
+            //Helper.Print(points); 
+            #endregion
         }
     }
 }

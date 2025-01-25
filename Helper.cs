@@ -10,19 +10,45 @@ namespace Adv1
     {
 
 
-        public static int linearsearch <T>(T[] arr , T value)
+        public static void BubbleSort <T>(T[]Arr)where T : IComparable
         {
-            if(arr?.Length > 0)
+            if(Arr?.Length > 0)
             {
-                for (int i = 0; i < arr.Length; i++)
+                for(int i =0; i <Arr.Length; i++)
                 {
-                    if (arr[i].Equals(value)) return i;
-                    
+                    for (int j = 0; j < Arr.Length -1; j++)
+                    {
+                        if (Arr[j].CompareTo(Arr[j + 1]) > 0) 
+                        {
+                            Swap(ref Arr[j],ref Arr[j + 1]);
+                        }
+                    }
                 }
-                
             }
-            return -1;
         }
+
+        public static void Print <T>(T[] arr)
+        {
+            foreach(T i in arr)
+            {
+                Console.Write($"{i} ");
+            }
+        }
+        #region video 3
+        //public static int linearsearch <T>(T[] arr , T value)
+        //{
+        //    if(arr?.Length > 0)
+        //    {
+        //        for (int i = 0; i < arr.Length; i++)
+        //        {
+        //            if (arr[i].Equals(value)) return i;
+
+        //        }
+
+        //    }
+        //    return -1;
+        //} 
+        #endregion
 
         #region generic
         public static void Swap<T>(ref T x, ref T y)

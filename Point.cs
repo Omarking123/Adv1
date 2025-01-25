@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adv1
 {
-    internal class Point
+    internal class Point : IComparable
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -19,6 +19,14 @@ namespace Adv1
         public override string ToString()
         {
             return $"{X}, {Y}";
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Point p = (Point)obj;
+            if (X == p.X) return Y.CompareTo(p.Y);
+
+            return X.CompareTo(p.X);
         }
     }
 }
